@@ -5,6 +5,9 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import Weather from './features/Weather/Weather';
+import Todos from './features/Todos/Todo'
+import Quote from './features/Quotes/Quotes';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -12,7 +15,17 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <App>
+        <div className='weather-comp'>
+       <Weather />
+        </div>
+        <div className='todo-list'>
+        <Todos/>
+        </div>
+        <div className='quotes-comp'>
+        <Quote />
+        </div>
+        </App>
     </Provider>
   </React.StrictMode>
 );

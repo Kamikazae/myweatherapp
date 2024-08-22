@@ -1,0 +1,71 @@
+.todo-section {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  border-radius: 8px;
+  padding: 100px;
+  width: 150%; /* Make it span a larger area */
+  max-width: 800px; /* Ensure it doesn’t exceed this width */
+  margin: 20px auto; /* Center horizontally with spacing */
+  box-shadow: 0 4px 8px ; /* Stretch items to fill container width */
+  margin-left: -200px;
+}
+
+.todo-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px; /* Increase margin for better spacing */
+  margin-top: -50px;
+}
+
+.todo-section input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1; /* Allow input to take up available space */
+}
+
+.todo-section button {
+  padding: 10px;
+  font-size: 6px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50px; /* Fixed width for the button */
+  margin-left: 10px; /* Add margin to separate from the input */
+}
+
+.todo-section button:hover {
+  background-color: #0056b3;
+}
+
+.todo-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0; /* Add margin to separate from other elements */
+}
+
+.todo-section li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(240, 244, 248, 0.8); /* Lightly transparent background for list items */
+  border-radius: 4px;
+  border: 1px solid #ddd; /* Add border for a clean look */
+  width: 100%; /* Ensure list item takes full width of container */
+}
+
+.todo-section li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+/*
+@media (min-width: 768px) {
+  .todo-section {
+      width: 80%; /* Adjust width for larger screens */
+      max-width: 900px; /* Increase max-width on larger screens */
+  

@@ -1,39 +1,87 @@
+/* App.css */
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f0f0f0; /* Fallback color */
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  grid-row: 1/2;
+  padding: 20px;
+  background-color: #282c34;
+  color: white; /* Adjusted to match the intended design */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.main-content {
+  grid-row: 2/3;
+  padding: 20px;
+  display:
 }
 
-.App-header {
-  min-height: 100vh;
+
+.header {
+  grid-row: 1/2;
+  padding: 20px;
+  background-color: rgba(240, 246, 248, 0.0)
+ 
+  
+}
+
+.main-content {
+  grid-row: 2/3;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.footer {
+  grid-row: 3/4;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+  text-align: center;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+/* Sections styling */
+.weather-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+ Responsive Adjustments 
+@media (min-width: 768px) {
+  .App {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
   }
-  50% {
-    transform: translateY(10px);
+  .main-content {
+    grid-column: 1/4;
   }
-  100% {
-    transform: translateY(0px);
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+  .main-content {
+    padding: 10px;
+  }
+  .weather-section, .quotes-section, .todo-list {
+    margin: 10px;
+    padding: 15px;
+  }
+  .header, .footer {
+    padding: 15px;
   }
 }

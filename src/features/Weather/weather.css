@@ -1,0 +1,56 @@
+.weather-section {
+    background-color: rgba(240, 246, 248, 0.236); /* Semi-transparent background */
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0; /* Remove margin to avoid extra spacing */
+    text-align: left; /* Align text to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    font-family: 'Arial', sans-serif;
+    position: absolute; /* Position it to the top right */
+    top: 20px;
+    right: 20px;
+    /* Ensure it's only applied to existing content */
+}
+
+.weather-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-section h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 0; /* Remove margin */
+}
+
+.weather-section .location {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.weather-section .icon {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.weather-section .temperature {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff8c00;
+    margin-top: 10px; /* Space above the temperature */
+}
+
+.weather-section .description {
+    font-size: 20px;
+    font-style: italic;
+    color: #007acc;
+    margin-top: 5px; /* Space above the description */
+}
+
+.weather-section p.error {
+    color: #ff4d4d;
+    font-weight: bold;
+}
